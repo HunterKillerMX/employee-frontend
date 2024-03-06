@@ -1,0 +1,20 @@
+
+<div>
+    <h1>Employees</h1>
+    <button class="btn btn-md btn-outline-primary" (click)="open(content)">Create Employee</button>
+
+    <ag-grid-angular
+        class="ag-theme-quartz"
+        style="height: 500px;"
+        [rowData]="employees"
+        [columnDefs]="colDefs">
+    </ag-grid-angular>
+</div>
+
+<ng-template #content let-modal>
+	<app-create-parent/>
+</ng-template>
+
+<ng-template #content let-modal>
+	<app-update-parent/>
+</ng-template>
