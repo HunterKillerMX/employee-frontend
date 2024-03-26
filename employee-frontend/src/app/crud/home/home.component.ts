@@ -22,8 +22,8 @@ export class CustomButtonComponent implements ICellRendererAngularComp {
 
   agInit(params: ICellRendererParams): void {};
 
-  openUpdate(content: TemplateRef<Employee>) {
-		this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then(
+  openUpdate(content_up: TemplateRef<Employee>) {
+		this.modalService.open(content_up, { ariaLabelledBy: 'modal-basic-title' }).result.then(
 			(result) => {
 				this.closeResult = `Closed with: ${result}`;
 			},
